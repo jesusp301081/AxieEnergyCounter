@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 216, 157);
+    font-family: 'Barriecito', cursive;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+}
+.img-title{
+    width: 50%;
+    height: 200px;
+}
+.counter{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.counter h2{
+    font-size: 70px;
+}
+.energy{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-style: dashed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+.carts{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px;
+    border-style: dashed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.axies-section{
+    padding-top: 5px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+.axies-section div{
+    background-color: brown;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.axies-section h2{
+    font-size: 50px;
+    font-weight: 900;
+    color:black;
+}
