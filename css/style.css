@@ -14,64 +14,74 @@ body{
     overflow: hidden;
     padding: 60px 0;
 }
+/*****************************header************************************/
 .header{
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: center;
-    padding-top: 2vh;
+    align-items: center;
 }
 .img-title{
     width: 50%;
-    height: 200px;
-}
-.counter{
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    padding-top: 10px;
+    height: 180px;
 }
 
-.counter h2{
-    font-size: 70px;
+/******************************main****************************************/
+.counter{
+    display: grid;
+    gap: 20px;
+    width: 90%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+    font-size: 30px;
 }
-.energy{
-    width: 100px;
-    height: 100px;
+.button{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.round-container{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 6;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
+.energy-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     border-style: dashed;
     justify-content: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
     
 }
-.carts{
-    width: 100px;
-    height: 100px;
+.carts-container{
+    grid-column-start: 4;
+    grid-column-end: 5;
     background-color: rgb(253, 253, 253);
     border-radius: 20px;
     border-style: dashed;
     justify-content: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
-.axies-section{
-    padding-top: 5px;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    justify-content: space-around;
-    background-color: aquamarine;
-}
-.axies-section div{
-    background-color: brown;
-    width: 20%;
+.button-energy-container{
+    grid-column-start: 2;
+    grid-row-start: 3;
     display: flex;
     justify-content: center;
 }
-.axies-section h2{
-    font-size: 50px;
-    font-weight: 900;
-    color:black;
+.button-cards-container{
+    grid-column-start: 4;
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
 }
