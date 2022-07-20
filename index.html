@@ -7,42 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Axie Counter</title>
+    <title>Axie Energy Counter</title>
 </head>
-
 <body>
-    <header class="header contenedor">
+    <!-- header  -->
+    <header class="header container">
         <img class="img-title" src="img/title-img.png" alt="logo">
     </header>
-    
-    <div class="counter contenedor">
+    <!-- main content -->
+    <main class="main-container container">
         <div class="round-container">
             <h2>Round-</h2>
-            <h2>1</h2>
+            <h2 id="round">1</h2>
         </div>
         <div class="energy-container">
-            <p>energy</p>
-            <h2>3</h2>
-            
+            <div class="energy">
+                <p>energy</p>
+                <h2 id="energy">3</h2>
+            </div>
         </div>
+    <!-- buttons -->
         <div class="button-energy-container">
-            <button id="button-plus-energy" class="button">+</button>
-            <button id="button-negative-energy" class="button">-</button>
+            <button id="button-negative-energy" class="button-dimentions">-</button>
+            <button id="button-plus-energy" class="button-dimentions">+</button>
         </div>
-        <div class="carts-container">
-            <p>cards</p>
-            <h2>3</h2>
+        <div class="function-buttons-container">
+            <button id="button-reset" class="buttons-dimentions">Reset</button>
+            <button id="button-new-round" class="buttons-dimentions">new round</button>
         </div>
-        <div class="button-cards-container">
-            <button id="button-plus-cards" class="button">+</button>
-            <button id="button-negative-cards" class="button">-</button>
-        </div>
-    </div>
- 
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy2022 jesusp301081, all rights reserved.</p>
+    </footer>
     <script src="scripts/script.js"></script>
 </body>
-
 </html>
